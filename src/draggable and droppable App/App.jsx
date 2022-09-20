@@ -13,14 +13,14 @@ function App() {
 	 * const handle drag sorting
 	 */
 	const handleSort = () => {
-		let item = [...items]
-		//remove and save the dragged item content
+		let item = [...items];
+		//remove and save the dragged item content 
 		const draggedItemContent = item.splice(dragItem.current, 1)[0]
 		//switch the position
 		item.splice(dragOverItem.current, 0, draggedItemContent)
 		//reset the position ref
-		dragItem.current = null
-		dragOverItem.current = null
+ 		dragItem.current = null;
+		dragOverItem.current = null;
 		//update the actual array
 		setItems(item);
 	};
@@ -46,7 +46,7 @@ function App() {
 			setName('');
 			setError('');
 		}
-	};
+  };
 
 	return (
 		<div className="app">
@@ -82,5 +82,4 @@ function App() {
 		</div>
 	)
 }
-
-export default App
+export default App;

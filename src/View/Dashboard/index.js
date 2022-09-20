@@ -56,7 +56,7 @@ const ChatPanel = ({ appState = [], addNewMessage = {} }) => {
         getData();
       });
     addNewMessage(message);
-    setUser({ ...user, comment: '' });
+    setUser({ ...user, comment:''});
   };
 
   // console.log
