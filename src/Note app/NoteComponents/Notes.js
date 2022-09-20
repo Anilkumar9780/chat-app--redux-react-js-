@@ -15,7 +15,7 @@ function Notes() {
   };
 
   // add new note to the state array
-  const saveHandler = () => {
+  const saveHandler = () => { 
     setNotes((prevState) => [
       ...prevState,
       {
