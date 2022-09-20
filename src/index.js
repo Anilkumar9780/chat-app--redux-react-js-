@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 // import App from './App';
-import App from './passwordGenerator/App';
+// import App from './passwordGenerator/App';
+import App from './Note app/App';
+// import App from './draggable and droppable App/App';
 // import configureStore from './Redux/store';
 // import { Provider } from 'react-redux';
 

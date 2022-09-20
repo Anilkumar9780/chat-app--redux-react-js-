@@ -6,14 +6,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import { COPY_Fail, COPY_SUCCESS } from './message';
 
 const App = () => {
-  const [password, setPassword] = useState("")
-  const [passwordLength, setPasswordLength] = useState(26)
-  const [includeUpperCase, setIncludeUpperCase] = useState(false)
-  const [includeLowerCase, setIncludeLowerCase] = useState(false)
-  const [includeNumbers, setIncludeNumbers] = useState(false)
-  const [includeSymbols, setIncludeSymbols] = useState(false)
+  const [password, setPassword] = useState("");
+  const [passwordLength, setPasswordLength] = useState(26);
+  const [includeUpperCase, setIncludeUpperCase] = useState(false);
+  const [includeLowerCase, setIncludeLowerCase] = useState(false);
+  const [includeNumbers, setIncludeNumbers] = useState(false);
+  const [includeSymbols, setIncludeSymbols] = useState(false);
 
-  
+
   const handleGeneratePassword = () => {
     if (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
       notify("To generate password you must select atleast one checkbox", true)
