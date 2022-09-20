@@ -52,8 +52,7 @@ const ChatPanel = ({ appState = [], addNewMessage = {} }) => {
   const submitComment = (event) => {
     event.preventDefault();
     const message = user;
-    axios.post(`http://localhost:3004/comments`, message)
-      .then((res) => {
+    axios.post('http://localhost:3004/comments', message).then((res) => {
         getData();
       });
     addNewMessage(message);
